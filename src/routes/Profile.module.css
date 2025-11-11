@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.base {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding-top: 10px;
+  width: 90%;
+  height: 180px;
+}
+
+.base img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.follow {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.follow p {
+  padding: 0;
+  padding-top: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content h3 {
+  padding-top: 40px;
+}
+
+.title {
+  margin-top: 50px;
+  width: 85%;
+}

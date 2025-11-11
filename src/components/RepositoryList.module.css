@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  background: rgb(51, 51, 51);
+  border-radius: 3px;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+.card button {
+  width: 60px;
+  height: 20px;
+  background: rgb(100, 0, 120);
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.card button:hover {
+  background: rgb(78, 1, 94);
+}

@@ -1,20 +1,28 @@
-import type { UserProps } from "../types/user";
+import { useLocation } from "react-router-dom";
+import styles from "./Profile.module.css";
+import { useEffect, useState } from "react";
+import RepositoryList from "../components/RepositoryList";
 
-const profile = ({
-  avatar_url,
-  login,
-  followers,
-  following,
-  bio,
-}: UserProps) => {
+const Profile = () => {
+  const location = useLocation();
+  const { avatar_url, login, followers, following, bio } = location.state;
+
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://api.github.com/users/${login}/repos`)
+      .then((response) => response.json())
+      .then((data) => setRepos(data));
+  }, []);
+
   return (
     <div className="background">
       <div className="container">
         <h1>Github Users</h1>
-        <div className="base">
+        <div className={styles.base}>
           <img src={avatar_url} alt={login} />
-          <div className="content">
-            <div className="follow">
+          <div className={styles.content}>
+            <div className={styles.follow}>
               <div>
                 <p>{followers}</p>
                 <p>Followers</p>
@@ -29,10 +37,13 @@ const profile = ({
           </div>
         </div>
 
-        <div className="card">Alex</div>
+        <h3 className={styles.title}>My Repos:</h3>
+        <div className="list">
+          <RepositoryList repos={repos} />
+        </div>
       </div>
     </div>
   );
 };
 
-export default profile;
+export default Profile;

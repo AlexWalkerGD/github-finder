@@ -3,7 +3,14 @@ import styles from "./Users.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const Repo = ({ avatar_url, login, company }: UserProps) => {
+const Repo = ({
+  avatar_url,
+  login,
+  company,
+  followers,
+  following,
+  bio,
+}: UserProps) => {
   return (
     <div className={styles.card}>
       <img src={avatar_url} alt={login} />
@@ -12,7 +19,11 @@ const Repo = ({ avatar_url, login, company }: UserProps) => {
         <p>{company}</p>
       </div>
 
-      <Link to={`/profile`} className={styles.link}>
+      <Link
+        to={`/profile`}
+        state={{ avatar_url, login, followers, following, bio }}
+        className={styles.link}
+      >
         <IoIosArrowForward size={50} />
       </Link>
     </div>
