@@ -12,7 +12,7 @@ const Repo = ({ avatar_url, login, company }: UserProps) => {
         <p>{company}</p>
       </div>
 
-      <Link to={`/repos/${login}`} className={styles.link}>
+      <Link to={`/profile`} className={styles.link}>
         <IoIosArrowForward size={50} />
       </Link>
     </div>

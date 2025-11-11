@@ -4,4 +4,5 @@ export type UserProps = {
   followers: number;
   following: number;
   company: string;
+  bio: string;
 };

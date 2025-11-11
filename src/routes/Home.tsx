@@ -8,13 +8,14 @@ const Home = () => {
   const loadUser = async (userName: string) => {
     const res = await fetch(`https://api.github.com/users/${userName}`);
     const data = await res.json();
-    const { avatar_url, login, followers, following, company } = data;
+    const { avatar_url, login, followers, following, company, bio } = data;
     const userData: UserProps = {
       avatar_url,
       login,
       followers,
       following,
       company,
+      bio,
     };
 
     setUser(userData);

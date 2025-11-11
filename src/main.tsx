@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./routes/Home";
+import Profile from "./routes/Profile";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
       },
     ],
   },

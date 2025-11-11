@@ -67,3 +67,45 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.base {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding-top: 10px;
+  width: 90%;
+  height: 180px;
+}
+
+.base img {
+  height: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content h3 {
+  padding-top: 40px;
+}
+
+.follow {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.follow p {
+  padding: 0;
+  padding-top: 8px;
+}
+
+.card {
+  display: flex;
+  background: rgb(51, 51, 51);
+  border-radius: 6px;
+  width: 85%;
+  height: 80px;
+  align-items: center;
+}
