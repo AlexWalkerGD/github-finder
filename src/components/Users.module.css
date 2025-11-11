@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  background: rgb(51, 51, 51);
+  border-radius: 6px;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+}
+
+.card img {
+  height: 60px;
+  display: flex;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.card div {
+  width: 100%;
+  padding-left: 15px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  padding-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 20ch;
+}
+
+.content {
+  width: 50px;
+}
+
+.link {
+  color: white;
+}
