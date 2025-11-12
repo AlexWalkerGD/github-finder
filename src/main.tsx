@@ -9,11 +9,11 @@ import Profile from "./routes/Profile";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/github-finder",
     element: <App />,
     children: [
       {
-        path: "/github-finder",
+        path: "/",
         element: <Home />,
       },
       {
