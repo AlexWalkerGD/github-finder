@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 🟦 GitHub Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Tech](https://img.shields.io/badge/tech-JavaScript-informational)
 
-Currently, two official plugins are available:
+## 📖 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**GitHub Finder** is a web application that allows users to search for any GitHub profile and view detailed information.  
+The project consumes the **GitHub API** to display user data such as avatar, bio, followers, and public repositories.
 
-## React Compiler
+🔗 **Access the live project:** [Click here](https://alexwalkergd.github.io/github-finder)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img width="495" height="670" alt="image" src="https://github.com/user-attachments/assets/73f89d55-f33c-4aa2-a463-ab7b831ef656" />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<img width="499" height="667" alt="image" src="https://github.com/user-attachments/assets/fcba3f79-a687-4d8b-a6ae-ad6d56c8a310" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Features
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🔍 Search any GitHub user by username  
+- 👤 Display avatar, name, and bio  
+- 👥 Show follower and following count  
+- 📦 List public repositories with links  
+- ⚡ Clean and responsive interface  
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5  
+- CSS3  
+- TypeScript
+- GitHub API  
+
+---
+
+## ⚙️ How to Run Locally
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/AlexWalkerGD/github-finder.git
+    ```
+
+2. Access the project folder:
+
+    ```bash
+    cd github-finder
+    ```
+
+3. Open the `index.html` file  
+   *(or run with “Live Server” in VS Code for a smoother experience)*
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Alex Walker**
+
+💼 [GitHub](https://github.com/AlexWalkerGD)  
+📧 alexwalkerson@hotmail.com
+
+---
+
+## 🪪 License
+
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute it as you wish.
